@@ -1,0 +1,37 @@
+@import "./locations.css";
+@import "./quotes.css";
+@import "./tips.css";
+@import "./fish.css";
+
+
+#container {
+    display: flex;
+}
+
+.header{
+    display: flex;
+}
+
+.siteLogo {
+height: 10em;
+}
+
+
+.content--left{
+    margin-right: 4rem;
+    flex: 3;
+}
+
+.content--right{
+    margin-right: 4rem;
+    flex: 1;
+
+}
+
+.card{
+    padding: 2rem;
+}
+
+.image--card{
+    margine-bottom: 2rem;
+}
