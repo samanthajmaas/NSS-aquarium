@@ -8,30 +8,35 @@
     display: flex;
 }
 
-.header{
+.header {
     display: flex;
 }
 
 .siteLogo {
-height: 10em;
+height: 12em;
+}
+
+.siteTitle {
+    justify-content: center;
+    font-size: 4em;
 }
 
 
-.content--left{
+.content--left {
     margin-right: 4rem;
     flex: 3;
 }
 
-.content--right{
+.content--right {
     margin-right: 4rem;
     flex: 1;
-
 }
 
-.card{
+.card {
     padding: 2rem;
 }
 
 .image--card{
-    margine-bottom: 2rem;
+    margin-bottom: 2rem;
+    height: 8em;
 }
