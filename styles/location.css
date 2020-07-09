@@ -1,7 +1,33 @@
 
-.locations{
-    border: 3px dotted pink;
+.locations {
     padding: 2rem;
     margin-bottom: 2rem;
     }
     
+
+.locations__heading {
+    display: flex;
+    color: #F7C331;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.location__image {
+    height: 14em;
+    width: 20em;
+}
+
+.location__name{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.location__url{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.location__description{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
