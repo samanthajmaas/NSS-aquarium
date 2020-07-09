@@ -1,7 +1,44 @@
 
 .fishes{
-    border: 3px dotted purple;
-    padding: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
+    padding: 2em;
     }
+
+.fish__heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #F7C331;
+}
+
+.fish__images {
+    height: 14em;
+     width: 20em;
+}
+
+.fish__name {
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.fish__species{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.fish__length{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.fish__location{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
+
+.fish__diet{
+    font-size: 1.60em;
+   color: #DCC7AA;
+}
 

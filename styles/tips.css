@@ -1,5 +1,14 @@
-.tips{
-    border: 3px dotted greenyellow;
-    
+
+ .aside__heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    flex-wrap: wrap;
+    color: #F7C331;
     }
-    
+
+
+.tips {
+   font-size: 1.60em;
+   color: #DCC7AA;
+}
