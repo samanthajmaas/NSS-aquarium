@@ -1,7 +1,9 @@
-import { useFish } from "./FishDataProvider.js"
+import { FishList } from "./fish/FishList.js"
+import { TipList } from "./tips/TipList.js"
+import { useLocations } from "./locations/LocationList.js"
 
-const allTheFish = useFish()
+FishList()
 
-for(const fish of allTheFish){
-    console.log(fish)
-}
+TipList()
+
+useLocations()
