@@ -1,21 +1,31 @@
-import {useFish} from "./FishDataProvider.js"
+import {useFish, holyFishFunction, soldierFishFunction, normalFishFunction} from "./FishDataProvider.js"
 import {Fish} from "./Fish.js"
 
-export const FishList = () => {
-    const contentElement = document.querySelector(".content--left")
-    const fishes = useFish()
+const contentElement = document.querySelector(".content--left")
 
+const addFishToDom = (fishArray) => {
+    let fishHTMLRepresentations = ""
 
-let fishHTMLRepresentations = ""
+    for (const fishObj of fishArray) {
+        fishHTMLRepresentations += Fish(fishObj)
+    }
 
-for (const fishObj of fishes) {
-    fishHTMLRepresentations += Fish(fishObj)
- }
-
-contentElement.innerHTML += `
+    contentElement.innerHTML += `
     <article class="fishList">
-        <h2 class="locations__heading">Fish</h2>
            ${fishHTMLRepresentations}
     </article>
      `
+}
+
+
+export const FishList = () => {
+
+    const holyFish = holyFishFunction()
+    addFishToDom(holyFish)
+
+    const soldierFish = soldierFishFunction()
+    addFishToDom(soldierFish)
+
+    const normalFish = normalFishFunction()
+    addFishToDom(normalFish)
 }
