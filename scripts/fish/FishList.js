@@ -4,15 +4,11 @@ import {Fish} from "./Fish.js"
 const contentElement = document.querySelector(".content--left")
 
 const addFishToDom = (fishArray) => {
-    let fishHTMLRepresentations = ""
-
-    for (const fishObj of fishArray) {
-        fishHTMLRepresentations += Fish(fishObj)
-    }
+    const fishes = useFish()
 
     contentElement.innerHTML += `
     <article class="fishList">
-           ${fishHTMLRepresentations}
+           ${fishes.map(fish => (Fish(fish)))}
     </article>
      `
 }
